@@ -2,27 +2,50 @@ public class HelloWorld {
     public static void main(String[] args) {
         System.out.println("Hello World!");
 
-//        data types
-        byte num1 = 127;       //very short integers from -128 to 127
-        short num2 = num1;    //short integers from -32,768 to 32,767 (2 bytes)
-        int num3 = num2;     //integers from -2,147,483,648 to 2,147,483,647 (4 bytes)
-        long num4 = num3;   // long integers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 (8 bytes)
+        int myFavoriteNumber = 3;
+        System.out.println(myFavoriteNumber);
 
-        float num5 = 3.333f;    // single-precision, floating-point numbers from -3.4E38 to 3.4E38 with up to 7 significant digits
-        // (4 bytes)
-        double num6 = num5;    //double-precision, floating-point numbers from -1.7E308 to 1.7E308 with up to 16 significant digits
-        // (8 bytes)
+        String myString = "wassup";
+        System.out.println(myString);
 
-        boolean yesNo = true;   // true or false value
-        yesNo = false;
+        float myNumber = 3.14f;
+        System.out.println(myNumber);
 
-        char initial;   //a single Unicode character that’s stored in two bytes
-        initial = 'D';
+//        int x = 5;
+//        System.out.println(x++);
+//        System.out.println(x);
 
-        System.out.println(num4);
-        System.out.println(num6);
-        System.out.println(yesNo);
-        System.out.println(initial);
+//        int y = 5;
+//        System.out.println(++y);
+//        System.out.println(y);
+
+        String theNumberThree = "three";
+        Object o = theNumberThree;
+//        int three = (int) o;
+//        int three = (int) "three";
+
+        System.out.println(theNumberThree);
+//        System.out.println(three);
+
+//        int x = 4;
+//        x = x + 5;
+//        System.out.println(x);
+
+//        int x = 3;
+//        int y = 4;
+//        y = y * x;
+//        System.out.println(y);
+
+//        int x = 10;
+//        int y = 2;
+//        x = x / y;
+//        y = y - x;
+//        System.out.println(y);
+
+        byte num = 127;
+        num = num++;
+        System.out.println(num);
+
     }
 }
 
