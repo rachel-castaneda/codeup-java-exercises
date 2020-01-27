@@ -19,32 +19,43 @@ public class HelloWorld {
 //        System.out.println(++y);
 //        System.out.println(y);
 
-        String theNumberThree = "three";
-        Object o = theNumberThree;
+//        String theNumberThree = "three";
+//        Object o = theNumberThree;
 //        int three = (int) o;
 //        int three = (int) "three";
 
-        System.out.println(theNumberThree);
+//        System.out.println(theNumberThree);
 //        System.out.println(three);
 
+        Integer theNumberFour = 4;
+        Object o = theNumberFour;
+        int four = (int) o;
+
+        System.out.println(four);
+
 //        int x = 4;
-//        x = x + 5;
+//        x += 5;
 //        System.out.println(x);
 
 //        int x = 3;
 //        int y = 4;
-//        y = y * x;
+//        y *= x;
 //        System.out.println(y);
 
-//        int x = 10;
-//        int y = 2;
-//        x = x / y;
-//        y = y - x;
-//        System.out.println(y);
+        int x = 10;
+        int y = 2;
+        x /= y;
+        y -= x;
+        System.out.println(y);
 
         byte num = 127;
-        num = num++;
-        System.out.println(num);
+//        System.out.println(num++);
+//        System.out.println(++num);
+
+        int num2 = Integer.MAX_VALUE;
+        num2++;
+        System.out.println(num2++);
+        System.out.println(num2);
 
     }
 }
