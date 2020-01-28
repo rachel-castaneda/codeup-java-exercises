@@ -42,7 +42,7 @@ public class ConsoleExercises {
             System.out.print("\n hey! yo, enter the width: ");
             double width = scanner.nextFloat();
             System.out.print("enter the length: ");
-            double length = scanner.nextFloar();
+            double length = scanner.nextFloat();
             System.out.printf("the dimensions are %f by %f. the perimeter is %f and the area is %f.\n", length, width, 2*(length+width), (length*width));
 
     }
