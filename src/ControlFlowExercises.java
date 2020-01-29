@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ControlFlowExercises {
     public static void  main (String[] args){
 
@@ -42,9 +44,12 @@ public class ControlFlowExercises {
 //        do {
 //            System.out.println(k);
 //            k*=k;
-//
 //        } while (k < 1000000);
-//
+
+
+        for (int i=2; i<=1000000; i=(int) Math.pow(i,2)){
+            System.out.println(i);
+        }
 //        for(long l =2; l <1000000; l++){
 //            if (l >= 1000000){
 //                break;
@@ -68,9 +73,11 @@ public class ControlFlowExercises {
 //                System.out.println(i);
 //        }
 
-        System.out.println("enter an integer: ");
-        double num = 0;
-
+//        System.out.println("enter an integer to start at: ");
+//        System.out.println("enter an integer to end at: ");
+//        System.out.println("Here's your table: ");
+//        System.out.println("   number   |   squared   |   cubed   ");
+//        System.out.println("   ------   |   -------   |   -----   ");
 
 
     }
