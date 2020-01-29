@@ -4,6 +4,11 @@ public class StringExercise {
 
         String example1 = "We don't need no education\nWe don't need no thought control";
         System.out.println(example1);
+//or
+        //String string = new String();
+        //string = "we dont need no education\n";
+        //string += "we dont need no thought control"
+        //System.out.println(string);
 
         String example2 = "Check \"This\" out!, \"s inside of \"s!";
         System.out.println(example2);
