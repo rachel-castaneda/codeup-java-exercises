@@ -64,8 +64,9 @@ public class ControlFlowExercises {
 //                System.out.println(i);
 //        }
 
-
+// table of squares and cubes
 //        System.out.println("What number would you like to go up to?");
+//        Scanner scanner = new Scanner(System.in);
 //        int userNumber = (int) scanner.nextFloat();
 //        System.out.println("Here is your table!\n");
 //        System.out.println("number | squared | cubed");
@@ -75,19 +76,30 @@ public class ControlFlowExercises {
 //            int cubed = (int) Math.pow(i, 3);
 //            System.out.println(i + "      | " + squared + "      | " + cubed);
 //        }
-//        System.out.println("enter an integer to start at: ");
-//        System.out.println("enter an integer to end at: ");
-//        System.out.println("Here's your table: ");
-//        System.out.println("   number   |   squared   |   cubed   ");
-//        System.out.println("   ------   |   -------   |   -----   ");
-//        int i =
 
-//        public static void gradeSystem (String[] args){
-//            Scanner scanner = new Scanner(System.in);
-//            System.out.println("enter a grade between 0-100: ");
-//            int grade = scanner.nextInt();
-//            if ()
-//        }
+
+        // grading system method
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("enter a grade between 0-100: ");
+        int grade = scanner.nextInt();
+        if (grade > 100) {
+            System.out.println("that is not a real grade, you overachiever. smh");
+        } else if (grade >= 88 && grade < 100){
+            System.out.println("A");
+        } else if (grade >=80 && grade <= 87) {
+            System.out.println("B");
+        } else if (grade >=67 && grade <= 79) {
+            System.out.println("C");
+        } else if (grade >= 60 && grade <= 66) {
+            System.out.println("D");
+        } else if (grade >= 0 && grade <=59) {
+            System.out.println("F");
+        } else {
+            System.out.println("are you even in school?");
+        }
     }
+
+
 }
 //take integer and sum all values from 1 to integer return long
