@@ -18,7 +18,9 @@ public class Person {
         System.out.printf("hello, my name is %s", this.name);
     }
     public static void main (String [] args) {
-        Person a = new Person("elmo");
+        Person a = new Person("sam");
+        Person b = new Person("jesus");
+        Person c = new Person("rafi");
 
         a.sayHello();
     }
