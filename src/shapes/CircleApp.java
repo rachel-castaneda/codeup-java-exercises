@@ -1,6 +1,6 @@
 package shapes;
 
-import java.util.Input;
+import util.Input;
 public class CircleApp {
 
     public static void main (String [] args) {
