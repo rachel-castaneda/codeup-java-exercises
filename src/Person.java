@@ -1,29 +1,33 @@
 public class Person {
-    private  String name;
+    private  String firstName;
+    private  String lastName;
 
-    public Person(String name) {
-        this.name = name;
+    public Person() {
     }
-
-    // returns the person's name
-    public String getName(){
-        return getName();
+    public String sayHello () {
+        return String.format("hello from %s %s!", firstName, lastName);
     }
-    // changes the name property to the passed value
-    public void setName(String name){
-        this.name = name;
-    }
-    // prints a message to the console using the person's name
-    public void sayHello(){
-        System.out.printf("hello, my name is %s", this.name);
-    }
-    public static void main (String [] args) {
-        Person a = new Person("sam");
-        Person b = new Person("jesus");
-        Person c = new Person("rafi");
-
-        a.sayHello();
+    @Override
+    public String toString () {
+        return String.format("%s %s", firstName, lastName);
     }
 
+    public Person(Person aPerson) {
+        this.setFirstName(aPerson.firstName);
+        this.setLastName(aPerson.lastName);
+    }
+    public String getFirstName() {
+        return firstName;
+    }
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
 }
 
