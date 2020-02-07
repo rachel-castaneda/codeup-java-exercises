@@ -2,9 +2,22 @@ import java.util.Scanner;
 import java.util.*;
 
 public class MorningExercises {
+
     public static void main (String [] args) {
-        sumBinary();
+//        sumBinary();
+        arrayPractice();
     }
+
+    public static void arrayPractice() {
+        ArrayList<String> fruitBasket= new ArrayList<>();
+        String[] fruits = {"strawberry", "banana", "grape"};
+        for (var i =0; i<fruits.length;i++) {
+            System.out.println(i);
+
+        }
+
+    }
+
     public static void sumBinary() {
         long binary1, binary2;
         int i =0, remainder = 0;
@@ -32,5 +45,7 @@ public class MorningExercises {
             System.out.print(sum[i--]);
         }
         System.out.print("\n");
+
+
     }
 }
